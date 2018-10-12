@@ -1,0 +1,76 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "movie library",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SuggestMovieIntent",
+                    "slots": [
+                        {
+                            "name": "Genre",
+                            "type": "Genre"
+                        }
+                    ],
+                    "samples": [
+                        "please tell me a {Genre} movie",
+                        "tell me a {Genre} movie"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "Genre",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "horror"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "action"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "comedy",
+                                "synonyms": [
+                                    "comic",
+                                    "funny"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

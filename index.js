@@ -3,7 +3,7 @@ const {names} = require('details.js');
 
 const imagePath = 'https://s3.amazonaws.com/karvydemo/karvy_bg2.png';
 const backgroundImagePath = `https://s3.amazonaws.com/karvydemo/karvy_bg.png`
-
+//arn:aws:lambda:us-east-1:561687188293:function:MovieLibrary
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
