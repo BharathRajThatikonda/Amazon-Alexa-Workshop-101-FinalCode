@@ -1,0 +1,17 @@
+{
+  "name": "Alexa-Workshop-101-FinalCode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk": "^2.0.9",
+    "ask-sdk-core": "^2.0.9",
+    "ask-sdk-model": "^1.5.0"
+  }
+}
