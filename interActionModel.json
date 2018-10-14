@@ -28,10 +28,17 @@
                     "slots": [
                         {
                             "name": "Genre",
-                            "type": "Genre"
+                            "type": "Genre",
+                            "samples": [
+                                "{Genre} movie",
+                                "{Genre}"
+                            ]
                         }
                     ],
                     "samples": [
+                        "suggest me movie",
+                        "suggest me a movie",
+                        "suggest me a {Genre} movie",
                         "please tell me a {Genre} movie",
                         "tell me a {Genre} movie"
                     ]
@@ -71,6 +78,37 @@
                     ]
                 }
             ]
-        }
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SuggestMovieIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Genre",
+                            "type": "Genre",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1057366208239.714446276041"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1057366208239.714446276041",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "tell me the genre"
+                    }
+                ]
+            }
+        ]
     }
 }
