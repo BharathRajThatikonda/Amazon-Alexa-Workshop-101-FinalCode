@@ -1,8 +1,8 @@
 const Alexa = require('ask-sdk');
 const {names} = require('details.js');
 
-const imagePath = 'https://s3.amazonaws.com/alexaworkshop/blue.png';
-const backgroundImagePath = `https://s3.amazonaws.com/alexaworkshop/blue.png`
+const imagePath = 'https://s3.amazonaws.com/alexaworkshop/movie_library.png';
+const backgroundImagePath = `https://s3.amazonaws.com/alexaworkshop/movie_library.png`
 //arn:aws:lambda:us-east-1:561687188293:function:MovieLibrary
 
 const LaunchRequestHandler = {
